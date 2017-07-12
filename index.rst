@@ -10,7 +10,7 @@ Welcome to Quamotion Cloud's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+    Getting started <getting-started/getting-started>  
 
 Indices and tables
 ==================
