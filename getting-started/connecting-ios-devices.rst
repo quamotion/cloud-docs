@@ -43,9 +43,9 @@ Troubleshooting iOS device connections
 
 If your iOS device does not appear:
 
-1. Run the `lsusb` command in a shell session in your Device Hub. This will list all USB devices which are
+1. Run the ``lsusb`` command in a shell session in your Device Hub. This will list all USB devices which are
    connected to your Device Hub. If you do not see your device in this list, check the USB connection between
    your device and the Device Hub.
-2. Run the `idevice_id -l` command in a shell session in your Device Hub. This will list all iOS device
+2. Run the ``idevice_id -l`` command in a shell session in your Device Hub. This will list all iOS device
    connected to your Device Hub. If you do not  your device in this list, try unplugging your device and
    connecting your device again.
