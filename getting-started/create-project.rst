@@ -7,7 +7,7 @@ follow these steps:
 1. Go to http://cloud.quamotion.mobi/
 2. Sign in with your Azure Active Directory account.
 
-    .. note:: You cannot use a Microsoft account so sign into Quamotion Cloud, you must use
+    .. note:: You cannot use a Microsoft account to sign into Quamotion Cloud, you must use
               an Azure Active Directory account.
 
 3. In the Your Projects page, click the *Create one to get started* link
