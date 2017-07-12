@@ -31,7 +31,7 @@ Once your device is connected to your Device Hub, follow these steps to configur
 Prepare your device for continuous automation
 ---------------------------------------------
 
-You can now fine-tine your device for continuous automation. When your device runs continuously, you want to
+You can now fine-tune your device for continuous automation. When your device runs continuously, you want to
 make sure your device does not drain the battery and does not automatically lock itself. Both a drained battery
 and a locked device would prevent your tests from running on your device.
 
@@ -52,7 +52,7 @@ If your iOS device does not appear:
    connected to your Device Hub. If you do not see your device in this list, check the USB connection between
    your device and the Device Hub.
 2. Run the ``idevice_id -l`` command in a shell session in your Device Hub. This will list all iOS device
-   connected to your Device Hub. If you do not  your device in this list, try unplugging your device and
+   connected to your Device Hub. If you do not see your device in this list, try unplugging your device and
    connecting your device again.
 3. You can force your device to reset the trust relationship between your device and all other devices, including
    the Device Hub, by tapping *Settings*, *General*, *Reset* and choosing *Reset Location & Privacy*. Then,

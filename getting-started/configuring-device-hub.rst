@@ -36,7 +36,7 @@ If you want, you can enable remote access to these ports by running the followin
 Installing a Quamotion License
 ------------------------------
 
-Quamotion License unlock the full potential of the Quamotion Software on your Device Hub.
+Quamotion Licenses unlock the full potential of the Quamotion Software on your Device Hub.
 
 To install a license, follow these steps:
 
