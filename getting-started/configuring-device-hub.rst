@@ -4,12 +4,34 @@ Configuring your Device Hub
 For your Device Hub to be able to run any tests, you must first configure your Device Hub
 and then connect devices to it.
 
-To configure your device hub, you must:
+To configure your Device Hub, you must:
 
 - Install a Quamotion License on your device hub
 - Install the Developer Disk images if you are going to run tests on iOS devices
 - Install a Developer profile if you are going to run tests on iOS devices
 
+Optionally, you can also enable remote access to your Device Hub.
+
+Enabling Remote Access
+----------------------
+
+You can interact with the Quamotion Software runing on your Device Hub by opening a browser session
+on ports ``17894`` and ``178955``.
+
+By default, the CentOS firewall prevents you from remotely opening a connection to these ports.
+
+If you want, you can enable remote access to these ports by running the following commands:
+
+.. code:: shell
+
+    firewall-cmd --zone=public --add-port=17894/tcp --permanent
+    firewall-cmd --zone=public --add-port=17895/tcp --permanent
+    firewall-cmd --reload
+
+.. warning::
+
+    Only enable remote access on a secure network. Anyone who can open a connection to these ports can
+    remotely control the devices connected to your Device Hub.
 
 Installing a Quamotion License
 ------------------------------
@@ -25,13 +47,13 @@ To install a license, follow these steps:
 3. Complete the requested information, and click the Request License link. You will receive a two-week license
    for your Device Hub by e-mail.
 4. Once you've received your license file, navigate to http://device-hub:17894/, click *Settings*  and click
-   *Install License*.
-5. Upload the license file you've received and click *OK*.
+   *Update License*.
+5. Upload the license file you've received and click *Update*.
 6. Finally, restart the Quamotion WebDriver by running
 
     .. code:: shell
 
-        systemctl reload quamotion
+        systemctl restart quamotion
 
 Installing the Developer Disk images
 ------------------------------------

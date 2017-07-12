@@ -10,7 +10,7 @@ To connect an iOS device, such as an iPhone or iPad, to your Device Hub, follow 
 2. Connect your iOS device to your Device Hub using an USB cable.
 3. When the *Trust this Device* pop-up appears on your iOS device, click *Trust*. It can take up to one minute
    for your iOS device and Device Hub to initiate the pairing process.
-4. On the Device Hub, navigate to http://localhost:17894/ and click the Devices tab. Your
+4. On the Device Hub, navigate to http://localhost:17894/ and click the *Devices* tab. Your
    device is now visible.
 5. Click your device, and click *Remote Screen*. You will now see a mirror of the device screen on your PC.
 
@@ -22,6 +22,11 @@ Once your device is connected to your Device Hub, follow these steps to configur
 1. Press the *Home* button and then tap *Settings*. Scroll down to and tap *Developer* and check *Enable UI Automation*.
 2. Go back to the *Settings* screen and tap *Safari*. Scroll down to the bottom of the page and tap *Advanced*
 3. Make sure the *Web Inspector* toggle is enabled.
+
+.. note::
+
+    If you do not see the *Developer* option in the Settings screen, open the Remote screen for your device by
+    following the steps in the previous section.
 
 Prepare your device for continuous automation
 ---------------------------------------------
@@ -49,3 +54,7 @@ If your iOS device does not appear:
 2. Run the ``idevice_id -l`` command in a shell session in your Device Hub. This will list all iOS device
    connected to your Device Hub. If you do not  your device in this list, try unplugging your device and
    connecting your device again.
+3. You can force your device to reset the trust relationship between your device and all other devices, including
+   the Device Hub, by tapping *Settings*, *General*, *Reset* and choosing *Reset Location & Privacy*. Then,
+   enter your passcode if required and tap *Reset Settings* to confirm. Finally, unplug the USB cable and then
+   reattach the USB cable to your Device Hub.
