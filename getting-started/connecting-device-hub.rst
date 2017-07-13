@@ -16,7 +16,8 @@ First, make sure the Device Hub agent is not running as a SystemD service:
     systemctl stop quamotion-monitoring
     systemctl disable quamotion-monitoring
 
-Next, let's grant your user access to Docker:
+Next, let's grant your user access to Docker. If your user already is a member of the ``docker`` group,
+you can skip this step.
 
 .. code:: shell
 
@@ -85,7 +86,7 @@ To restart the Device Hub agent, run the following command:
 
 .. code:: shell
 
-    /usr/local/quamotion-monitoring/Quamotion.Monitoring.StationManager
+    /usr/share/quamotion-monitoring/Quamotion.Monitoring.StationManager
 
 You will now see a message indicating that the Device Hub agent has connected successfully to Quamotion Cloud.
 

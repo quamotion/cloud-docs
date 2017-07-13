@@ -81,7 +81,7 @@ You can check the status of these services through the ``systemctl status`` comm
 .. code:: shell
 
     systemctl status quamotion
-    systemctl status quamotion-webdriver
+    systemctl status quamotion-monitoring
 
 Some of the folders the Quamotion WebDriver uses may become unavailable after a reboot. In this case, the Quamotion WebDriver
 may fail to start and you may see an access denied error message. In that case, you can manually recreate these folders and
