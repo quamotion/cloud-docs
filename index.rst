@@ -11,6 +11,7 @@ Welcome to Quamotion Cloud's documentation!
    :caption: Contents:
 
     Getting started <getting-started/getting-started>  
+    Development <developing/welcome.rst>  
 
 Indices and tables
 ==================
