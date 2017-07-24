@@ -63,25 +63,25 @@ Finally, you can download and install the RPM packages for the Quamotion WebDriv
 
     # Download the Quamotion software
     webdriver_version=0.70.5.11552
-    device_hub_version=0.66.90.41986
-    wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm -O ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
-    wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-monitoring.$device_hub_version.rhel.7.0-x64.rpm -O ~/quamotion-monitoring.$device_hub_version.rhel.7.0-x64.rpm
+    device_hub_version=0.66.106.1713
+	wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm -O ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
+    wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-device-hub.$device_hub_version.rhel.7.0-x64.rpm -O ~/quamotion-device-hub.$device_hub_version.rhel.7.0-x64.rpm
 
     yum install -y ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
-    yum install -y ~/quamotion-monitoring.$device_hub_version.rhel.7.0-x64.rpm
+    yum install -y ~/quamotion-device-hub.$device_hub_version.rhel.7.0-x64.rpm
 
 Verifying the Quamotion Software
 --------------------------------
 
 The Quamotion WebDriver and Quamotion Device Hub Agent should now be running on your Device Hub. The Quamotion WebDriver
-runs as the ``quamotion`` service, whereas the Quamotion Device Hub Agent runs as the ``quamotion-monitoring`` service.
+runs as the ``quamotion`` service, whereas the Quamotion Device Hub Agent runs as the ``quamotion-device-hub`` service.
 
 You can check the status of these services through the ``systemctl status`` command:
 
 .. code:: shell
 
     systemctl status quamotion
-    systemctl status quamotion-monitoring
+    systemctl status quamotion-device-hub
 
 Some of the folders the Quamotion WebDriver uses may become unavailable after a reboot. In this case, the Quamotion WebDriver
 may fail to start and you may see an access denied error message. In that case, you can manually recreate these folders and
