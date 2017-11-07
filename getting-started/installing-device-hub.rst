@@ -65,9 +65,9 @@ Finally, you can download and install the RPM packages for the Quamotion WebDriv
 
     # Download the Quamotion software
     webdriver_version=0.79.22
-    device_hub_version=0.66.90.41986
+    device_hub_version=0.66.158.37795
     wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm -O ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
-    wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-monitoring.$device_hub_version.rhel.7.0-x64.rpm -O ~/quamotion-monitoring.$device_hub_version.rhel.7.0-x64.rpm
+    wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-monitoring.$device_hub_version.linux-x64.rpm -O ~/quamotion-monitoring.$device_hub_version.linux-x64.rpm
 
     yum install -y ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
     yum install -y ~/quamotion-device-hub.$device_hub_version.rhel.7.0-x64.rpm
