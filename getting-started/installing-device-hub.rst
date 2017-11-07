@@ -65,12 +65,23 @@ Finally, you can download and install the RPM packages for the Quamotion WebDriv
 
     # Download the Quamotion software
     webdriver_version=0.79.24
-    device_hub_version=0.66.158.37795
+    device_hub_version=0.66.164.43885
     wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm -O ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
     wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-device-hub.$device_hub_version.linux-x64.rpm -O ~/quamotion-device-hub.$device_hub_version.linux-x64.rpm
 
     yum install -y ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
     yum install -y ~/quamotion-device-hub.$device_hub_version.linux-x64.rpm
+
+Granting permissions
+--------------------
+
+The Quamotion Device Hub uses Docker containers to start agents which can execute scripts on devices. To grant the Quamotion
+Device Hub permissions to access Docker, run the following commands:
+
+.. code:: shell
+
+    groupadd docker
+    usermod -aG docker quamotion-device-hub
 
 Verifying the Quamotion Software
 --------------------------------
