@@ -64,7 +64,7 @@ Finally, you can download and install the RPM packages for the Quamotion WebDriv
 .. code:: shell
 
     # Download the Quamotion software
-    webdriver_version=0.79.22
+    webdriver_version=0.79.24
     device_hub_version=0.66.158.37795
     wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm -O ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
     wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-device-hub.$device_hub_version.linux-x64.rpm -O ~/quamotion-device-hub.$device_hub_version.linux-x64.rpm
