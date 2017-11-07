@@ -57,15 +57,17 @@ by installing a custom repository:
     # Download updated versions of libimobiledevice, usbmuxd, libgdiplus
     wget -nv -nc http://download.opensuse.org/repositories/home:qmfrederik/CentOS_7/home:qmfrederik.repo -O /etc/yum.repos.d/quamotion.repo
 
+    yum install -y libunwind libicu libgdiplus0 libimobiledevice-devel usbmuxd android-tools
+
 Finally, you can download and install the RPM packages for the Quamotion WebDriver and Quamotion Device Hub:
 
 .. code:: shell
 
     # Download the Quamotion software
-    webdriver_version=0.70.5.11552
-    device_hub_version=0.66.106.1713
-	wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm -O ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
-    wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-device-hub.$device_hub_version.rhel.7.0-x64.rpm -O ~/quamotion-device-hub.$device_hub_version.rhel.7.0-x64.rpm
+    webdriver_version=0.79.22
+    device_hub_version=0.66.90.41986
+    wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm -O ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
+    wget -nv -nc https://qmcdn.blob.core.windows.net/download/quamotion-monitoring.$device_hub_version.rhel.7.0-x64.rpm -O ~/quamotion-monitoring.$device_hub_version.rhel.7.0-x64.rpm
 
     yum install -y ~/quamotion-webdriver.$webdriver_version.rhel.7.0-x64.rpm
     yum install -y ~/quamotion-device-hub.$device_hub_version.rhel.7.0-x64.rpm

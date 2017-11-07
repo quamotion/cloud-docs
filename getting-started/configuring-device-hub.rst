@@ -16,7 +16,7 @@ Enabling Remote Access
 ----------------------
 
 You can interact with the Quamotion Software runing on your Device Hub by opening a browser session
-on ports ``17894`` and ``178955``.
+on ports ``17894`` and ``17895``.
 
 By default, the CentOS firewall prevents you from remotely opening a connection to these ports.
 
@@ -70,7 +70,6 @@ Device Hub before Quamotion can mount it.
 To install the iOS Developer Disk on your Device Hub, you need to download it from a Mac machine
  and copy it to your Device Hub. Follow these steps:
 
- 
 1. On a Mac machine, make sure the latest version of Xcode is installed
 2. Navigate to the ``/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport`` folder
    and create a zip archive that contains the contents of this folder.
