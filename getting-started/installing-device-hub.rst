@@ -101,3 +101,20 @@ restart the Quamotion WebDriver service:
     chown quamotion:quamotion /var/lib/quamotion
 
     systemctl start quamotion
+
+Some of the folders the Quamotion Device Hub uses may become unavailable after a reboot. In this case, the Quamotion Device Hub
+may fail to start and you may see an access denied error message. In that case, you can manually recreate these folders and
+restart the Quamotion Device Hub service:
+
+.. code:: shell
+
+    mkdir /var/run/quamotion-device-hub
+    chown quamotion-device-hub:quamotion-device-hub /var/run/quamotion-device-hub
+
+    mkdir /var/log/quamotion-device-hub
+    chown quamotion-device-hub:quamotion-device-hub /var/log/quamotion-device-hub
+
+    mkdir /var/lib/quamotion-device-hub
+    chown quamotion-device-hub:quamotion-device-hub /var/lib/quamotion-device-hub
+
+    systemctl start quamotion-device-hub
