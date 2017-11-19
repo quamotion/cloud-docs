@@ -76,6 +76,8 @@ To install the iOS Developer Disk on your Device Hub, you need to download it fr
 3. Copy this zip archive to your Device Hub.
 4. Unzip this archive into ``/var/lib/quamotion/devimg/``
 
+Alternatively, you can also navigate to http://device-hub:17894/, click *Settings* and click *Upload Developer Disk*.
+
 Installing a Developer Profile
 ------------------------------
 
