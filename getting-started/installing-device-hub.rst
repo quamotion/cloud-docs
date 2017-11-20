@@ -38,7 +38,7 @@ Run the following command to update the Quamotion Software:
 .. code:: shell
 
     yum clean all
-    yum update --nopgpgcheck
+    yum --nopgpgcheck update
 
 Granting permissions
 --------------------
